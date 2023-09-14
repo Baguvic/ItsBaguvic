@@ -342,7 +342,24 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="/script.js"></script>
+    <script>
+      function search() {
+        let filter = document.getElementById("search").value.toUpperCase();
+        let item = document.querySelectorAll(".seacrhList");
+        let name = document.getElementsByTagName("h5");
+
+        for (var i = 0; i <= name.length; i++) {
+          let a = item[i].getElementsByTagName("h5")[0];
+          let value = a.innerHTML || a.innerText || a.textContent;
+
+          if (value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display = "";
+          } else {
+            item[i].style.display = "none";
+          }
+        }
+      }
+    </script>
     <!-- sidebar -->
     <script>
       const navbar = document.getElementsByTagName("nav")[0];
