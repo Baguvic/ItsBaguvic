@@ -1,8 +1,10 @@
 const navbar = document.getElementsByTagName("nav")[0];
+const canvas = document.querySelector(".offcanvas");
 window.addEventListener("scroll", function () {
   console.log(window.scrollY);
   if (this.window.scrollY > 1) {
     navbar.classList.replace("bg-transparent", "nav-color");
+    canvas.style.height = "100vh";
   } else if (this.window.scrollY <= 0) {
     navbar.classList.replace("nav-color", "bg-transparent");
   }
