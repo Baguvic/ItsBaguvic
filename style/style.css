@@ -8,6 +8,7 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
 .nav-color {
   background-color: #44444461 !important;
   border-bottom: 1px solid rgb(121, 121, 121);
@@ -337,7 +338,25 @@
   font-style: normal;
   font-weight: 700;
 }
+.pesan {
+  display: flex;
+  background-color: #ffc300;
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: fixed;
+  top: 8rem;
+  right: 5rem;
+  display: none;
+  text-align: center;
+}
 
+.pesan h3 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
 /* footer  */
 footer {
   padding: 4rem 0;
@@ -417,9 +436,36 @@ footer a:hover {
   .story .midStory {
     align-items: center;
   }
+
+  .project .right {
+    margin-top: 2rem;
+  }
+  .project .right h3 {
+    font-size: 3rem;
+  }
+  .project .right h4 {
+    font-size: 3rem;
+  }
+  .project .right .text-bot p,
+  .project span,
+  .project .right .btn-buttom {
+    font-size: 1.5rem;
+  }
+  nav .container {
+    padding: 0 4%;
+  }
+  .container {
+    padding: 0 4%;
+  }
+  .project .right .Inspirations img {
+    width: 4rem;
+  }
 }
 @media (max-width: 575.98px) {
   html {
     font-size: 55%;
+  }
+  .container {
+    padding: 0 7%;
   }
 }

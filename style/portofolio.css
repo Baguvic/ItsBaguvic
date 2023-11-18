@@ -63,6 +63,12 @@
   padding-bottom: 4rem;
   color: var(--font);
 }
+.list .seacrhList {
+  padding: 0;
+  overflow: hidden;
+  margin: 1rem !important;
+}
+
 .list .backList {
   background-color: #444;
 }

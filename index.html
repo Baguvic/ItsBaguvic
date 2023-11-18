@@ -65,8 +65,10 @@
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto text-center">
               <a class="nav-link me-2" aria-current="page" href="#">Home</a>
-              <a class="nav-link me-2" href="#portofolio">My Portofolio</a>
-              <a class="nav-link me-2" href="#">About</a>
+              <a class="nav-link me-2" href="page/portofolio.html"
+                >My Portofolio</a
+              >
+              <a class="nav-link me-2" href="page/mystory.html">About</a>
               <a class="nav-link me-2" href="#contact">Contact ME</a>
             </div>
           </div>
@@ -456,6 +458,9 @@
           </div>
         </div>
       </div>
+      <div class="pesan">
+        <h3>Message Sent</h3>
+      </div>
     </section>
     <!-- contact section end -->
 
@@ -512,6 +517,7 @@
     <script>
       window.addEventListener("load", function () {
         const form = document.getElementById("my-form");
+        const pesan = document.querySelector(".pesan");
         form.addEventListener("submit", function (e) {
           e.preventDefault();
           const data = new FormData(form);
@@ -520,7 +526,7 @@
             method: "POST",
             body: data,
           }).then(() => {
-            alert("Pesan terkirim");
+            alert("pesan terkirim");
           });
         });
       });

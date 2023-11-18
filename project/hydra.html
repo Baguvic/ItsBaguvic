@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Story</title>
+    <title>My Portofolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Port+Lligat+Slab&family=Readex+Pro:wght@300;400;500;600;700&family=Sacramento&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Port+Lligat+Sans&family=Readex+Pro:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
     <!-- style -->
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/story.css" />
     <link rel="stylesheet" href="../style/portofolio.css" />
+    <link rel="stylesheet" href="style/project.css" />
     <link rel="icon" href="../img/new log.png" />
     <link
       rel="stylesheet"
@@ -69,67 +70,99 @@
               <a class="nav-link me-2" aria-current="page" href="../index.html"
                 >Home</a
               >
-              <a class="nav-link me-2" href="#">About</a>
-              <a class="nav-link me-2" href="portofolio.html">My Portofolio</a>
+              <a class="nav-link me-2" href="../page/mystory.html">About</a>
+              <a class="nav-link me-2" href="../page/portofolio.html"
+                >My Portofolio</a
+              >
             </div>
           </div>
         </div>
       </div>
     </nav>
     <!-- navbar section end -->
-    <section class="story">
+
+    <section class="project">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-12">
-            <span>My Story</span>
-            <h1>About Me</h1>
-          </div>
-          <div class="col-12">
-            <img src="../img/story-1.png" alt="story" class="top" />
-            <p class="paragraf">
-              Hello, I'm Bagus, and I've recently graduated from Universitas
-              Sebelas April with a Bachelor's degree in Computer Science. My
-              journey into the world of technology began during my fourth
-              semester of college. Since then, I've been captivated by the
-              ever-evolving world of technology, and it has become my passion.
-              While pursuing my Bachelor's degree in Computer Science, I
-              discovered my true calling within the field: Front-End
-              Development. There's something incredibly rewarding about taking a
-              concept and turning it into a visually stunning, user-friendly
-              website. I firmly believe that the front-end of a website serves
-              as its face to the world, and I'm dedicated to creating memorable
-              and enjoyable online experiences for users.
-            </p>
-          </div>
+        <div class="header-text">
+          <h2>My <span>Portofolio</span></h2>
+          <span class="side"
+            >Inspiration from Instagram, Dribble & Figma Comunity.</span
+          >
         </div>
-        <div class="row mt-5 justify-content-center midStory">
-          <div class="col-md-6">
-            <h2>Frontend Developer</h2>
-            <p>
-              I found myself irresistibly drawn into the realm of Front-End
-              Development when I first ventured into the world of Figma. As I
-              began honing my design skills and gradually transitioned into a
-              coder, translating my Figma designs into HTML and CSS, it felt
-              like performing digital alchemy. The sheer satisfaction I derived
-              from witnessing my visual creations come to life in the digital
-              landscape was nothing short of magical. This experience laid the
-              cornerstone of my journey towards becoming a passionate Front-End
-              Developer.
-            </p>
-            <p>
-              In the projects ahead, I am determined to continue chasing
-              creativity and innovation, delivering websites that are not just
-              functional but also captivating. I am incredibly excited to see
-              where this journey will take me and how my contributions to the
-              frontend world will continue to evolve.
-            </p>
-            <p>
-              Thank you for this opportunity, and may we all continue to inspire
-              and enrich the online world with every step we take.
-            </p>
+        <div class="row mt-5">
+          <div class="col-md-8 left">
+            <div class="header-col">
+              <img
+                src="../img/project/project-1/1.png"
+                alt="project"
+                id="bigImg"
+              />
+            </div>
+            <div class="header-body d-flex justify-content-center">
+              <div class="small">
+                <img
+                  src="../img/project/project-1/1.png"
+                  alt="project"
+                  class="img-bot"
+                  onclick="showImg(this.src)"
+                />
+              </div>
+              <div class="small">
+                <img
+                  src="../img/project/project-1/2.png"
+                  alt="project"
+                  class="img-bot"
+                  onclick="showImg(this.src)"
+                />
+              </div>
+              <div class="small">
+                <img
+                  src="../img/project/project-1/3.png"
+                  alt="project"
+                  class="img-bot"
+                  onclick="showImg(this.src)"
+                />
+              </div>
+              <div class="small">
+                <img
+                  src="../img/project/project-1/4.png"
+                  alt="project"
+                  class="img-bot"
+                  onclick="showImg(this.src)"
+                />
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <img src="../img/story-2.png" alt="story" class="bot" />
+          <div class="col-md-3 right">
+            <h3 class="text-center">Landing Page Care App</h3>
+            <div class="text-bot">
+              <p>
+                Care App is a revolutionary application that transforms vehicle
+                care. Users can easily maintain their vehicles through services,
+                car washes, and component purchases anytime, anywhere. This
+                application is the result of the hard work of developers who
+                have implemented these features. See more...
+              </p>
+            </div>
+            <div class="Inspirations">
+              <h4>Inspirations</h4>
+              <a
+                href="https://baguvic.github.io/3.-Care-App-Landing-page/"
+                target="_blank"
+                ><img src="../img/project/logo-1.png" alt="Inspirations"
+              /></a>
+              <a
+                href="https://www.figma.com/file/3zqsq9zMQNE5da64RYXtjX/Cares-App-Landing-Page?type=design&node-id=1%3A3&mode=design&t=RMNH4KyfI44jBJYC-1"
+                target="_blank"
+                ><img src="../img/project/logo-2.png" alt="Inspirations"
+              /></a>
+              <a
+                href="https://github.com/Baguvic/3.-Care-App-Landing-page"
+                target="_blank"
+                ><img src="../img/project/logo-3.png" alt="Inspirations"
+              /></a>
+            </div>
+            <a href="../page/portofolio.html" class="btn-buttom">More Design</a>
           </div>
         </div>
       </div>
@@ -170,6 +203,9 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="/script.js"></script>
+    <script src="../script.js"></script>
+    <script src="project.js"></script>
   </body>
 </html>
+
+<!-- nice try is the best day ever -->
