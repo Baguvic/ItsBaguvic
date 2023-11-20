@@ -188,8 +188,26 @@
   margin-bottom: 2rem;
 }
 .portofolio .card .bodyCard .demo {
-  padding: 0.625rem 2.5rem;
+  padding: 0.4rem 1rem;
   background: white;
+  color: black;
+  border-radius: 3.125rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.portofolio .card .bodyCard .demo.nice {
+  padding: 0.4rem 1rem;
+  background: var(--primary);
+  color: rgb(255, 255, 255);
+  border-radius: 3.125rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.portofolio .card .bodyCard .demo:hover {
+  padding: 0.4rem 1rem;
+  background: var(--primary);
   color: black;
   border-radius: 3.125rem;
   font-size: 1rem;

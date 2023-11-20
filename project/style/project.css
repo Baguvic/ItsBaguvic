@@ -83,3 +83,15 @@
 .project .side {
   font-size: 1.5rem;
 }
+.footer .sosmed .project-icon {
+  color: #fff !important;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: linear 0.3;
+}
+.footer .sosmed .project-icon:hover {
+  color: #fed624 !important;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: linear 0.3;
+}
